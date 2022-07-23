@@ -6,11 +6,15 @@ Source: https://guacamole.apache.org/doc/0.9.0/guacamole-common-js/symbols/src/s
 
 from enum import IntEnum
 
-__version__: str = "0.0.1"
+__version__: str = "0.0.4"
 __author__: str = "Ari Archer <ari.web.xyz@gmail.com>"
 
 
 class UnshiftedKeyCodes(IntEnum):
+    """Map of known JavaScript keycodes which do not map to typable characters
+    to their unshifted X11 keysym equivalents.
+    """
+
     BACKSPACE = 0xFF08
     TAB = 0xFF09
     ENTER = 0xFF0D
@@ -50,7 +54,10 @@ class UnshiftedKeyCodes(IntEnum):
     SCROLL_LOCK = 0xFF14
 
 
-class KetIdentifiers(IntEnum):
+class KeyIdentifiers(IntEnum):
+    """Map of known Python keyidentifiers which do not map to typable
+    characters to their unshifted X11 keysym equivalents."""
+
     AGAIN = 0xFF66
     ALL_CANDIDATES = 0xFF3D
     ALPHANUMERIC = 0xFF30
@@ -157,10 +164,17 @@ class KetIdentifiers(IntEnum):
 
 
 class ShiftedKeywords(IntEnum):
+    """Map of known Python keycodes which do not map to typable characters
+    to their shifted X11 keysym equivalents. Keycodes must only be listed
+    here if their shifted X11 keysym equivalents differ from their unshifted
+    equivalents."""
+
     ALT = 0xFFE7
 
 
 class NoRepeat(IntEnum):
+    """All keysyms which should not repeat when held down."""
+
     LEFT_SHIFT = 0xFFE1
     RIGHT_SHIFT = 0xFFE2
     LEFT_CTRL = 0xFFE3
@@ -174,6 +188,8 @@ class NoRepeat(IntEnum):
 
 
 class AsciiKeys(IntEnum):
+    """Map of all X11 typable ASCII characters"""
+
     KEY_SPACE = 0x20
     KEY_LOWERCASE_A = 0x61
     KEY_LOWERCASE_B = 0x62
