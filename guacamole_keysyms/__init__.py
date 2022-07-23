@@ -4,8 +4,8 @@
 Source: https://guacamole.apache.org/doc/0.9.0/guacamole-common-js/symbols/src/src_main_webapp_modules_Keyboard.js.html"""
 
 
-__version__: str = "0.0.5"
-__author__: str = "Ari Archer"
+__version__: str = "0.0.6"
+__author__: str = "AriArcher"
 __author_email__: str = "ari.web.xyz@gmail.com"
 
 
