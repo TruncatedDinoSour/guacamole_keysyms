@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""__init__.py library stub"""
+"""guacamole_keysyms library stub"""
 
 
-from enum import IntEnum
+__version__: str
+__author__: str
+__author_email__: str
 
 
-class UnshiftedKeyCodes(IntEnum):
+class UnshiftedKeyCodes:
     BACKSPACE: int
     TAB: int
     ENTER: int
@@ -46,7 +48,7 @@ class UnshiftedKeyCodes(IntEnum):
     SCROLL_LOCK: int
 
 
-class KeyIdentifiers(IntEnum):
+class KeyIdentifiers:
     AGAIN: int
     ALL_CANDIDATES: int
     ALPHANUMERIC: int
@@ -152,11 +154,11 @@ class KeyIdentifiers(IntEnum):
     ZENKAKU_HANKAKU: int
 
 
-class ShiftedKeywords(IntEnum):
+class ShiftedKeywords:
     ALT: int
 
 
-class NoRepeat(IntEnum):
+class NoRepeat:
     LEFT_SHIFT: int
     RIGHT_SHIFT: int
     LEFT_CTRL: int
@@ -169,7 +171,7 @@ class NoRepeat(IntEnum):
     RIGHT_HYPER: int
 
 
-class AsciiKeys(IntEnum):
+class AsciiKeys:
     KEY_SPACE: int
     KEY_LOWERCASE_A: int
     KEY_LOWERCASE_B: int
