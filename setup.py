@@ -4,8 +4,8 @@ with open("README.md", "r") as desc:
     long_description: str = desc.read()
 
 setuptools.setup(
-    name="guacamole_keysyms",
-    version="0.0.2",
+    name="guacamole-keysyms",
+    version="0.0.3",
     author="AriArcher",
     author_email="ari.web.xyz@gmail.com",
     description="Guacamole protocol key mappings for python",
