@@ -1,12 +1,12 @@
-import setuptools
+import setuptools  # type: ignore
 
 with open("README.md", "r") as desc:
     long_description: str = desc.read()
 
 setuptools.setup(
     name="guacamole_keysyms",
-    version="0.0.1",
-    author="Ari Archer",
+    version="0.0.2",
+    author="AriArcher",
     author_email="ari.web.xyz@gmail.com",
     description="Guacamole protocol key mappings for python",
     long_description=long_description,
